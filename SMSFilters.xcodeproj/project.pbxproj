@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		610C83F01F3FEE94001C0C14 /* spam-words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 610C83EF1F3FEE94001C0C14 /* spam-words.txt */; };
+		610C83F11F3FEF91001C0C14 /* spam-words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 610C83EF1F3FEE94001C0C14 /* spam-words.txt */; };
+		61FB9E731F3F166D00AA22D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB9E721F3F166D00AA22D3 /* AppDelegate.swift */; };
+		61FB9E781F3F166D00AA22D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FB9E761F3F166D00AA22D3 /* Main.storyboard */; };
+		61FB9E7A1F3F166D00AA22D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FB9E791F3F166D00AA22D3 /* Assets.xcassets */; };
+		61FB9E7D1F3F166D00AA22D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FB9E7B1F3F166D00AA22D3 /* LaunchScreen.storyboard */; };
+		61FB9E881F3F166D00AA22D3 /* SMSFiltersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB9E871F3F166D00AA22D3 /* SMSFiltersTests.swift */; };
+		61FB9E931F3F166D00AA22D3 /* SMSFiltersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB9E921F3F166D00AA22D3 /* SMSFiltersUITests.swift */; };
+		61FB9EA11F3F16A900AA22D3 /* FiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB9EA01F3F16A900AA22D3 /* FiltersTableViewController.swift */; };
+		61FB9EA91F3F16EB00AA22D3 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB9EA81F3F16EB00AA22D3 /* MessageFilterExtension.swift */; };
+		61FB9EAD1F3F16EB00AA22D3 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61FB9EA61F3F16EB00AA22D3 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61FD26281F3F180300475ABA /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD26271F3F180300475ABA /* Filter.swift */; };
+		61FD262A1F3F1DE700475ABA /* AddFilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD26291F3F1DE700475ABA /* AddFilterTableViewController.swift */; };
+		61FD262C1F3F21D400475ABA /* MatchingTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD262B1F3F21D400475ABA /* MatchingTypesTableViewController.swift */; };
+		61FD262D1F3F490400475ABA /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD26271F3F180300475ABA /* Filter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61FB9E841F3F166D00AA22D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61FB9E671F3F166D00AA22D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61FB9E6E1F3F166D00AA22D3;
+			remoteInfo = SMSFilters;
+		};
+		61FB9E8F1F3F166D00AA22D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61FB9E671F3F166D00AA22D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61FB9E6E1F3F166D00AA22D3;
+			remoteInfo = SMSFilters;
+		};
+		61FB9EAB1F3F16EB00AA22D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61FB9E671F3F166D00AA22D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61FB9EA51F3F16EB00AA22D3;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61FB9EB11F3F16EB00AA22D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				61FB9EAD1F3F16EB00AA22D3 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		610C83EF1F3FEE94001C0C14 /* spam-words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "spam-words.txt"; sourceTree = "<group>"; };
+		61FB9E6F1F3F166D00AA22D3 /* SMSFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FB9E721F3F166D00AA22D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61FB9E771F3F166D00AA22D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61FB9E791F3F166D00AA22D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61FB9E7C1F3F166D00AA22D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61FB9E7E1F3F166D00AA22D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FB9E831F3F166D00AA22D3 /* SMSFiltersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSFiltersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FB9E871F3F166D00AA22D3 /* SMSFiltersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSFiltersTests.swift; sourceTree = "<group>"; };
+		61FB9E891F3F166D00AA22D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FB9E8E1F3F166D00AA22D3 /* SMSFiltersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSFiltersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FB9E921F3F166D00AA22D3 /* SMSFiltersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSFiltersUITests.swift; sourceTree = "<group>"; };
+		61FB9E941F3F166D00AA22D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FB9EA01F3F16A900AA22D3 /* FiltersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersTableViewController.swift; sourceTree = "<group>"; };
+		61FB9EA61F3F16EB00AA22D3 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FB9EA81F3F16EB00AA22D3 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		61FB9EAA1F3F16EB00AA22D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FD26251F3F175200475ABA /* SMSFilters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SMSFilters.entitlements; sourceTree = "<group>"; };
+		61FD26261F3F176B00475ABA /* MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesExtension.entitlements; sourceTree = "<group>"; };
+		61FD26271F3F180300475ABA /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		61FD26291F3F1DE700475ABA /* AddFilterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFilterTableViewController.swift; sourceTree = "<group>"; };
+		61FD262B1F3F21D400475ABA /* MatchingTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingTypesTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61FB9E6C1F3F166D00AA22D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E801F3F166D00AA22D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E8B1F3F166D00AA22D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9EA31F3F16EB00AA22D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61FB9E661F3F166D00AA22D3 = {
+			isa = PBXGroup;
+			children = (
+				61FB9E711F3F166D00AA22D3 /* SMSFilters */,
+				61FB9E861F3F166D00AA22D3 /* SMSFiltersTests */,
+				61FB9E911F3F166D00AA22D3 /* SMSFiltersUITests */,
+				61FB9EA71F3F16EB00AA22D3 /* MessagesExtension */,
+				61FB9E701F3F166D00AA22D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61FB9E701F3F166D00AA22D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61FB9E6F1F3F166D00AA22D3 /* SMSFilters.app */,
+				61FB9E831F3F166D00AA22D3 /* SMSFiltersTests.xctest */,
+				61FB9E8E1F3F166D00AA22D3 /* SMSFiltersUITests.xctest */,
+				61FB9EA61F3F16EB00AA22D3 /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61FB9E711F3F166D00AA22D3 /* SMSFilters */ = {
+			isa = PBXGroup;
+			children = (
+				61FD26251F3F175200475ABA /* SMSFilters.entitlements */,
+				61FB9E721F3F166D00AA22D3 /* AppDelegate.swift */,
+				61FB9EA01F3F16A900AA22D3 /* FiltersTableViewController.swift */,
+				61FD26291F3F1DE700475ABA /* AddFilterTableViewController.swift */,
+				61FD262B1F3F21D400475ABA /* MatchingTypesTableViewController.swift */,
+				61FD26271F3F180300475ABA /* Filter.swift */,
+				61FB9E761F3F166D00AA22D3 /* Main.storyboard */,
+				61FB9E791F3F166D00AA22D3 /* Assets.xcassets */,
+				61FB9E7B1F3F166D00AA22D3 /* LaunchScreen.storyboard */,
+				61FB9E7E1F3F166D00AA22D3 /* Info.plist */,
+				610C83EF1F3FEE94001C0C14 /* spam-words.txt */,
+			);
+			path = SMSFilters;
+			sourceTree = "<group>";
+		};
+		61FB9E861F3F166D00AA22D3 /* SMSFiltersTests */ = {
+			isa = PBXGroup;
+			children = (
+				61FB9E871F3F166D00AA22D3 /* SMSFiltersTests.swift */,
+				61FB9E891F3F166D00AA22D3 /* Info.plist */,
+			);
+			path = SMSFiltersTests;
+			sourceTree = "<group>";
+		};
+		61FB9E911F3F166D00AA22D3 /* SMSFiltersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61FB9E921F3F166D00AA22D3 /* SMSFiltersUITests.swift */,
+				61FB9E941F3F166D00AA22D3 /* Info.plist */,
+			);
+			path = SMSFiltersUITests;
+			sourceTree = "<group>";
+		};
+		61FB9EA71F3F16EB00AA22D3 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				61FD26261F3F176B00475ABA /* MessagesExtension.entitlements */,
+				61FB9EA81F3F16EB00AA22D3 /* MessageFilterExtension.swift */,
+				61FB9EAA1F3F16EB00AA22D3 /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61FB9E6E1F3F166D00AA22D3 /* SMSFilters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61FB9E971F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFilters" */;
+			buildPhases = (
+				61FB9E6B1F3F166D00AA22D3 /* Sources */,
+				61FB9E6C1F3F166D00AA22D3 /* Frameworks */,
+				61FB9E6D1F3F166D00AA22D3 /* Resources */,
+				61FB9EB11F3F16EB00AA22D3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61FB9EAC1F3F16EB00AA22D3 /* PBXTargetDependency */,
+			);
+			name = SMSFilters;
+			productName = SMSFilters;
+			productReference = 61FB9E6F1F3F166D00AA22D3 /* SMSFilters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61FB9E821F3F166D00AA22D3 /* SMSFiltersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61FB9E9A1F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFiltersTests" */;
+			buildPhases = (
+				61FB9E7F1F3F166D00AA22D3 /* Sources */,
+				61FB9E801F3F166D00AA22D3 /* Frameworks */,
+				61FB9E811F3F166D00AA22D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61FB9E851F3F166D00AA22D3 /* PBXTargetDependency */,
+			);
+			name = SMSFiltersTests;
+			productName = SMSFiltersTests;
+			productReference = 61FB9E831F3F166D00AA22D3 /* SMSFiltersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61FB9E8D1F3F166D00AA22D3 /* SMSFiltersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61FB9E9D1F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFiltersUITests" */;
+			buildPhases = (
+				61FB9E8A1F3F166D00AA22D3 /* Sources */,
+				61FB9E8B1F3F166D00AA22D3 /* Frameworks */,
+				61FB9E8C1F3F166D00AA22D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61FB9E901F3F166D00AA22D3 /* PBXTargetDependency */,
+			);
+			name = SMSFiltersUITests;
+			productName = SMSFiltersUITests;
+			productReference = 61FB9E8E1F3F166D00AA22D3 /* SMSFiltersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		61FB9EA51F3F16EB00AA22D3 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61FB9EAE1F3F16EB00AA22D3 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				61FB9EA21F3F16EB00AA22D3 /* Sources */,
+				61FB9EA31F3F16EB00AA22D3 /* Frameworks */,
+				61FB9EA41F3F16EB00AA22D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 61FB9EA61F3F16EB00AA22D3 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61FB9E671F3F166D00AA22D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = levantAJ;
+				TargetAttributes = {
+					61FB9E6E1F3F166D00AA22D3 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					61FB9E821F3F166D00AA22D3 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 61FB9E6E1F3F166D00AA22D3;
+					};
+					61FB9E8D1F3F166D00AA22D3 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 61FB9E6E1F3F166D00AA22D3;
+					};
+					61FB9EA51F3F16EB00AA22D3 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 61FB9E6A1F3F166D00AA22D3 /* Build configuration list for PBXProject "SMSFilters" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61FB9E661F3F166D00AA22D3;
+			productRefGroup = 61FB9E701F3F166D00AA22D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61FB9E6E1F3F166D00AA22D3 /* SMSFilters */,
+				61FB9E821F3F166D00AA22D3 /* SMSFiltersTests */,
+				61FB9E8D1F3F166D00AA22D3 /* SMSFiltersUITests */,
+				61FB9EA51F3F16EB00AA22D3 /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61FB9E6D1F3F166D00AA22D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB9E7D1F3F166D00AA22D3 /* LaunchScreen.storyboard in Resources */,
+				610C83F01F3FEE94001C0C14 /* spam-words.txt in Resources */,
+				61FB9E7A1F3F166D00AA22D3 /* Assets.xcassets in Resources */,
+				61FB9E781F3F166D00AA22D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E811F3F166D00AA22D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E8C1F3F166D00AA22D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9EA41F3F16EB00AA22D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610C83F11F3FEF91001C0C14 /* spam-words.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61FB9E6B1F3F166D00AA22D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB9EA11F3F16A900AA22D3 /* FiltersTableViewController.swift in Sources */,
+				61FD26281F3F180300475ABA /* Filter.swift in Sources */,
+				61FD262C1F3F21D400475ABA /* MatchingTypesTableViewController.swift in Sources */,
+				61FB9E731F3F166D00AA22D3 /* AppDelegate.swift in Sources */,
+				61FD262A1F3F1DE700475ABA /* AddFilterTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E7F1F3F166D00AA22D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB9E881F3F166D00AA22D3 /* SMSFiltersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9E8A1F3F166D00AA22D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB9E931F3F166D00AA22D3 /* SMSFiltersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FB9EA21F3F16EB00AA22D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB9EA91F3F16EB00AA22D3 /* MessageFilterExtension.swift in Sources */,
+				61FD262D1F3F490400475ABA /* Filter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61FB9E851F3F166D00AA22D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61FB9E6E1F3F166D00AA22D3 /* SMSFilters */;
+			targetProxy = 61FB9E841F3F166D00AA22D3 /* PBXContainerItemProxy */;
+		};
+		61FB9E901F3F166D00AA22D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61FB9E6E1F3F166D00AA22D3 /* SMSFilters */;
+			targetProxy = 61FB9E8F1F3F166D00AA22D3 /* PBXContainerItemProxy */;
+		};
+		61FB9EAC1F3F16EB00AA22D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61FB9EA51F3F16EB00AA22D3 /* MessagesExtension */;
+			targetProxy = 61FB9EAB1F3F16EB00AA22D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61FB9E761F3F166D00AA22D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61FB9E771F3F166D00AA22D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61FB9E7B1F3F166D00AA22D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61FB9E7C1F3F166D00AA22D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61FB9E951F3F166D00AA22D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61FB9E961F3F166D00AA22D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61FB9E981F3F166D00AA22D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SMSFilters/SMSFilters.entitlements;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFilters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFilters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		61FB9E991F3F166D00AA22D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SMSFilters/SMSFilters.entitlements;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFilters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFilters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		61FB9E9B1F3F166D00AA22D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFiltersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFiltersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSFilters.app/SMSFilters";
+			};
+			name = Debug;
+		};
+		61FB9E9C1F3F166D00AA22D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFiltersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFiltersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSFilters.app/SMSFilters";
+			};
+			name = Release;
+		};
+		61FB9E9E1F3F166D00AA22D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFiltersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFiltersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMSFilters;
+			};
+			name = Debug;
+		};
+		61FB9E9F1F3F166D00AA22D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = SMSFiltersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFiltersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMSFilters;
+			};
+			name = Release;
+		};
+		61FB9EAF1F3F16EB00AA22D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFilters.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61FB9EB01F3F16EB00AA22D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				DEVELOPMENT_TEAM = DFJYL5D7C7;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.SMSFilters.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61FB9E6A1F3F166D00AA22D3 /* Build configuration list for PBXProject "SMSFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FB9E951F3F166D00AA22D3 /* Debug */,
+				61FB9E961F3F166D00AA22D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61FB9E971F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FB9E981F3F166D00AA22D3 /* Debug */,
+				61FB9E991F3F166D00AA22D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61FB9E9A1F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFiltersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FB9E9B1F3F166D00AA22D3 /* Debug */,
+				61FB9E9C1F3F166D00AA22D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61FB9E9D1F3F166D00AA22D3 /* Build configuration list for PBXNativeTarget "SMSFiltersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FB9E9E1F3F166D00AA22D3 /* Debug */,
+				61FB9E9F1F3F166D00AA22D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61FB9EAE1F3F16EB00AA22D3 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FB9EAF1F3F16EB00AA22D3 /* Debug */,
+				61FB9EB01F3F16EB00AA22D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61FB9E671F3F166D00AA22D3 /* Project object */;
+}
